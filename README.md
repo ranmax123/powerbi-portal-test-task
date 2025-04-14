@@ -1,4 +1,4 @@
-# PowerBI Portal Test Task
+# Power BI Portal Test Task
 
 This is a React-based dashboard application built with Vite, TypeScript, and Tailwind CSS.
 
@@ -13,7 +13,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd powerbi-portal-test-task
+cd power-bi-portal-test-task
 ```
 
 2. Install dependencies:

@@ -1,8 +1,14 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Input } from '../components/ui/input'
+import usePageMetadata from '../hooks/usePageMetadata'
 
 const Login = () => {
+  usePageMetadata({
+    title: "Login | Power BI Portal",
+    description: "Sign in to access your Power BI dashboards and reports"
+  });
+
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -26,7 +32,7 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="w-full max-w-md p-8 space-y-8 bg-white shadow-lg rounded-lg">
         <div className="text-center">
-          <h2 className="text-3xl font-bold">Sign in to our platform</h2>
+          <h2 className="text-3xl font-bold">Sign in to Power BI Portal</h2>
         </div>
 
         <form className="mt-8 space-y-6" onSubmit={handleLogin}>
@@ -56,6 +62,15 @@ const Login = () => {
                 className="w-full px-3 py-2 border rounded-md"
               />
             </div>
+          </div>
+
+          <div className="flex items-center justify-end">
+            <a 
+              href="#" 
+              className="text-sm text-blue-600 hover:text-blue-800 hover:underline"
+            >
+              Forgot password?
+            </a>
           </div>
 
           <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-md cursor-pointer">

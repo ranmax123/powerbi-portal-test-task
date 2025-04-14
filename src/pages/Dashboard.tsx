@@ -1,4 +1,11 @@
+import usePageMetadata from '../hooks/usePageMetadata';
+
 const Dashboard = () => {
+  usePageMetadata({
+    title: "Dashboard | Power BI Portal",
+    description: "View and manage your Power BI dashboards and reports"
+  });
+
   return (
     <div className="bg-background p-8">
       <div className="max-w-4xl mx-auto">
